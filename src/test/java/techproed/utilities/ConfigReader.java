@@ -1,4 +1,4 @@
-package utilities;
+package techproed.utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;

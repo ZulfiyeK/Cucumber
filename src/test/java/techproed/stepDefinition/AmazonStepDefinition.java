@@ -1,11 +1,11 @@
-package stepDefinition;
+package techproed.stepDefinition;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import utilities.ConfigReader;
-import utilities.Driver;
+import techproed.utilities.ConfigReader;
+import techproed.utilities.Driver;
 
 public class AmazonStepDefinition {
 
