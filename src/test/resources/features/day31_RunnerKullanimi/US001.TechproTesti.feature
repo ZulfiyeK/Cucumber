@@ -1,3 +1,4 @@
+@all
 Feature: US001 TechProEducation Sayfasi Testi
   Scenario: Tc01 Satfada Arama Yap
     Given Kullanici techpro sayfasina gider
@@ -15,6 +16,7 @@ Feature: US001 TechProEducation Sayfasi Testi
     And sayfayi kapatir.
 
 
+    @techpro
     Scenario: TC03 Sayfada Arama Yapar
       Given Kullanici techpro sayfasina gider
       Then arama kutusunda mobil aratir

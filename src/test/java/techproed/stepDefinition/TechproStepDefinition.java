@@ -56,4 +56,14 @@ public class TechproStepDefinition {
     public void sayfaBasligininMobilIcerdiginiTestEder() {
         Assert.assertFalse(Driver.getDriver().getTitle().contains("mobil"));
     }
+
+    @Given("Kullanici {string} sayfasina gider")
+    public void kullaniciSayfasinaGider(String url) {
+        Driver.getDriver().get(url);
+    }
+
+    @Then("arama kutusunda {string} aratir")
+    public void aramaKutusundaAratir(String str) {
+        techproPage.aramaKutusu.sendKeys(str);
+    }
 }
