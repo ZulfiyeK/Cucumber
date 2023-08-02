@@ -57,7 +57,7 @@ public class TechproStepDefinition {
         Assert.assertFalse(Driver.getDriver().getTitle().contains("mobil"));
     }
 
-    @Given("Kullanici {string} sayfasina gider")
+    @Given("Kullanici {string} url sayfasina gider.")
     public void kullaniciSayfasinaGider(String url) {
         Driver.getDriver().get(url);
     }
