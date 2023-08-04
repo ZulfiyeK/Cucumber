@@ -15,7 +15,7 @@ sayesinde çalıştırabiliriz. Ve plugin parametresi ile raporlar alabiliriz
                            "junit:target/xml-report/cucumber.xml"},
                  features = "src/test/resources/features",
                  glue = {"techproed/stepDefinition"},
-                 tags = "@techpro",
+                 tags = "@arac1",
                  dryRun = false,  //-->true seçersek scenarioları kontrol eder browser'ı çalıştırmaz
         monochrome = false //--> sonuc yazilarinin renk ayarin yapar
 )

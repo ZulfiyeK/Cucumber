@@ -3,6 +3,7 @@ Feature: US001 Google Sayfasi Testi
   Background: Google sayfasina gidilir.
     Given Kullanici "googleUrl" sayfasina gitti.
 
+    @volvo
     Scenario: Arama kutusunda volvo aratir.
       Then Kullanici google arama kutusunda "volvo" aratir.
       But Kullanici 2 saniye bekler.
