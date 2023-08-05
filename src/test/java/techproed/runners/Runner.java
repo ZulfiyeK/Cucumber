@@ -12,13 +12,16 @@ sayesinde çalıştırabiliriz. Ve plugin parametresi ile raporlar alabiliriz
 @CucumberOptions(plugin = {"pretty",
                            "html:target/default-cucumber-reports.html",
                            "json:target/json-reports/cucumber.json",
-                           "junit:target/xml-report/cucumber.xml"},
+                           "junit:target/xml-report/cucumber.xml",
+                           "rerun: TestOutput/failed_scenario.txt"},
+
+                    //return ile belirttigimiz dosya da fail olan scenariolari
                  features = "src/test/resources/features",
                  glue = {"techproed/stepDefinition"},
-                 tags = "@arac1",
+                 tags = "@arc",
                  dryRun = false,  //-->true seçersek scenarioları kontrol eder browser'ı çalıştırmaz
-        monochrome = false //--> sonuc yazilarinin renk ayarin yapar
-)
+        monochrome = false )//--> sonuc yazilarinin renk ayarin yapar
+
 
 public class Runner {
 }
